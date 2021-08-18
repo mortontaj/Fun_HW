@@ -7,7 +7,7 @@ function filterLongWords(string, i){
     string = string.split(' ')
     longer = []
     for (x = 0; x < string.length; x++){
-        if (i < string[x].length)
+        if (Number(i) < string[x].length)
             {longer.push(string[x])}}
 
     if (longer.length > 0)

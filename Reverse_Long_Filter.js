@@ -32,4 +32,4 @@ function findLongestWord(string){
 
 var x = input("Write a phrase ")
 console.log(findLongestWord(x))
-// console.log(x.split(' '))
+console.log(x.split(' '))
