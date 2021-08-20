@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Class</title>
+</head>
+<style>
+    b {
+        color: red;
+    }
+</style>
+<body>
+    <h1>MATH HW IS SO FUN</h1>
+    <p id="p1"></p>
+
+    <script>
+    var text = '<p>';
+    class Circle {
+        constructor(diameter) {
+          this.diameter = diameter;
+        }
+
+        radius() {
+          let r = this.diameter;
+          return r / 2;
+        }
+      
+        circle_area() {
+          let rad = this.radius();
+          return Math.PI * (rad * rad);
+        }
+
+        displayCircle() {
+          text = text + "<p> A circle with a diameter of <b>" + this.diameter + "</b> has the radius of <b>"  + this.radius() + "</b> and area of <b>" + this.circle_area() + "</b></p>";
+          return text;
+        }
+    }
+      
+      const circle1 = new Circle(20);
+      circle1.displayCircle();
+      
+      class Rectangle {
+        constructor(length, width) {
+          this.length = length;
+          this.width = width;
+        }
+        rectangle_area() {
+          return this.length * this.width;
+        }
+      
+        perimeter() {
+          return this.length * 2 + this.width * 2;
+        }
+      
+        displayRec() {
+          text = text + "<p>A rectangle with length <b>" + this.length + "</b> and width <b>" + this.width + "</b> has the area of <b>" + this.rectangle_area() + "</b> and perimeter of <b>" + this.perimeter() + "</b></p>";
+          return text;
+        }
+      }
+      
+      const rec1 = new Rectangle(30, 23);
+      rec1.displayRec();
+      
+      class Square {
+        constructor(side) {
+          this.side = side;
+        }
+
+        sq_area() {
+          return Math.pow(this.side, 2)
+        }
+
+        diagonal() {
+          return Math.sqrt(this.sq_area() * 2);
+        }
+
+        displaySqu() {
+          let area = this.sq_area();
+          let diagonal = this.diagonal();
+          text = text + `<p>A square with a side of <b>${this.side}</b> has the area of <b>${area}</b> and main diagonal equal to <b>${diagonal}</b><p>`;
+          return text;
+        }
+      }
+      
+      const sq = new Square(30);
+      sq.displaySqu();
+      
+      text = text + '</p>';
+      document.getElementById('p1').innerHTML = text;
+    </script>
+</body>
+</html>
