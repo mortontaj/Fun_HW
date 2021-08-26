@@ -1,4 +1,7 @@
-﻿let find = document.getElementsByClassName("searchButton");
+/// CHANGE TO YOUR KEY
+/// lines 35 and 214
+
+let find = document.getElementsByClassName("searchButton");
 Array.from(find).forEach((search) =>
   search.addEventListener("click", tickerChoice)
 );
@@ -30,7 +33,7 @@ async function stockAnalysis(stock) {
     method: "GET",
     headers: {
       "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2",
+      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2", /// <----- Change to your key
     },
   })
     .then((response) => response.json())
@@ -209,7 +212,7 @@ async function stockBackground(stock) {
     method: "GET",
     headers: {
       "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2",
+      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2", /// <----- Change to your key
     },
   })
     .then((response) => response.json())
