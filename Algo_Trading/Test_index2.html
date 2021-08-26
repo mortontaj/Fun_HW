@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Test_style.css">
+    <script src="contact US.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_nmOnFeEFAxLG9kIZVImKi");
+})();
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1>
+        MarkerTTaj
+    </h1>
+    <!-------Main Nav Bar------->
+    <div id="navBar">
+        <a href="Test_index_Home.html">Home</a>
+        <a href="Test_index.html">Daily update</a>
+        <a href="Test_index_Asset_Flip.html">Asset Classes</a>
+        <a href="#">Risk Factors</a>
+        <a href="#">Economic Data</a>
+        <a href="my_story.html">My Story</a>
+        <a href="#">My Account</a>
+    </div>
+    <br>
+    <div class="boxx">
+        <li>Continuing</li>
+        <li>perseverance</li>  
+        <li>Learning</li>
+        <li>faster</li>
+        <li>Elevating</li>
+        <li>upward</li>
+    </div>
+    <!-------Contact Us------->
+    <!-- <h2>Contact us</h2> -->
+    <br>
+    <h3><b>Send a message and we will respond within 24 hours</b></h3>
+    <br><div>
+    <input type="text" id="Email" placeholder="Email Address" required>
+    </div><br><div>
+        <input type="text" id="fromName" placeholder="Enter your name" required>
+    <div><br>
+        <textarea type="text" id="msg" placeholder="Enter to your Message" required></textarea></div>
+        <button onclick="sendMail()">Submit</button>
+
+    <br>
+    <div>
+        <br>
+        <form action="https://formsubmit.co/mortontaj@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New email">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="hidden" name="_next" value="Thanks.html">
+            <input type="text" id="msg" placeholder="Enter to your Message" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    
+        <!-- <form method="POST" class="contact-form"><br>
+        <label for="" class="lab"><b>Name</label><br>
+        <input class="labContent" type="text" placeholder="Your Name" required /><br>
+        <label for="" class="lab">Email</label><br>
+        <input class="labContent" type="email" placeholder="Your Email" required /><br>
+        <label for="" class="lab">Message</b></label><br>
+        <textarea
+            class="labContent"
+            name=""
+            id=""
+            cols=""
+            rows=""
+            placeholder="Your thoughts"
+            required
+        ></textarea><br>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- <form action=”mailto:mortontaj@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+        <input type="email" name="email" placeholder="Email Address"><br>
+        <input type="hidden" name="_subject" value="Stock API Inquiry">
+        <input type="text" name="_honey" style="display:none">
+        Name:<br>
+        <input type=”text” size=”19″ name=”ContactName”><br><br>
+        Message:<br>
+        <textarea name=”ContactCommentt” rows=”6″ cols=”20″></textarea><br><br>
+        <input type="button" name="_captcha" value="true">
+        
+        <button type=”submit” value=”Submit” onclick="">Submit
+            
+            <input type="hidden" name="_next" value="https://mortontaj@gmail.com.co/Thanks.html">
+            <input type="hidden" name="_autoresponse" value="your custom message">
+            <input type="hidden" name="_webhook" value="https://yourdomain.co/your-webhook">
+        </button><br><br> -->
+        
+        
+        <!-------Website Footer------->
+        <br>
+        <div class="grid_content_footer">
+            <div class=searchNav>
+                "<i>We make informed investing easier.</i>" - <b> Taj Morton</b>
+            </div>
+        </div>
+        <div class="site_footer">
+            <div class="footer1"><a href="#"> Partners</a></div>
+            <div class="footer2"><a href="#"> Terms</a></div>
+            <div class="footer3"><a href="Test_index2.html"> Contact Us</a></div>
+            <div class="footer4"><a href="#"> Copyright</a></div>
+        </div>
+</body>
+
+</html>
