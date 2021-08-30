@@ -33,7 +33,7 @@ async function stockAnalysis(stock) {
     method: "GET",
     headers: {
       "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2", /// <----- Change to your key
+      "x-rapidapi-key": "", /// <----- Change to your key
     },
   })
     .then((response) => response.json())
@@ -212,7 +212,7 @@ async function stockBackground(stock) {
     method: "GET",
     headers: {
       "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-      "x-rapidapi-key": "7a7b957881mshd3ce7c9e713536dp16ee6cjsn45965a7a6da2", /// <----- Change to your key
+      "x-rapidapi-key": "", /// <----- Change to your key
     },
   })
     .then((response) => response.json())
@@ -263,9 +263,3 @@ async function stockBackground(stock) {
       console.error("err");
     });
 }
-
-// security token markettaj mortontaj
-// 37181e64-700d-4cdd-b2d1-11dda05b9ddc
-
-//code
-//8ff9d9db-b6da-4e2e-98e3-94baeb81030f
